@@ -11,9 +11,17 @@ import {Task} from './task.model';
       <input name="description" placeholder="Description" class="col-sm-8 input-lg form-control" #newDescription>
       <hr>
       <label for="priority">Priority</label>
-      <input name="priority" placeholder="Priority" class="col-sm-4 input-lg form-control" #newPriority>
+      <select name="priority" placeholder="Priority" class="col-sm-4 input-lg form-control" #newPriority>
+        <option value="HIGH">HIGH!!!!</option>
+        <option value="Medium">Medium?</option>
+        <option value="low">low.....</option>
+      </select>
       <label for="category">Category</label>
-      <input name="category" placeholder="Category" class="col-sm-4 input-lg form-control" #newCategory>
+      <select name="category" placeholder="Category" class="col-sm-4 input-lg form-control" #newCategory>
+        <option value="Home">Home</option>
+        <option value="Work">Work</option>
+        <option value="Hobby">Hobby</option>
+      </select>
       <button (click)="addTask(newDescription, newPriority, newCategory)" class="btn-success btn-lg add-button form-control">Add</button>
     </div>
   `
